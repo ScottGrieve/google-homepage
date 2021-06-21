@@ -1,13 +1,4 @@
-.logo-form {
-    display:grid;
-    justify-content: center;
-    align-content: center;
-    grid-template-areas: 
-    "logo logo "
-    "searchbar searchbar"
-    "search lucky";
-    
-}
+
 ul {
     list-style-type:none;
     margin:0;
@@ -28,17 +19,15 @@ li a:link {
 li a:hover {
     text-decoration: underline;
 }
-.logo {
-grid-area: logo;
+.logo-form {
+   height: 10em;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+    }
+.buttons {
+    
 }
-.search-bar {
-grid-area: searchbar;
-}
-.search-btn {
-grid-area: search;
-grid-column-start: 1;
-grid-row-end: 2;
-}
-.lucky {
-grid-area: lucky;
-}
+    
+   

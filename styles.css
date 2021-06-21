@@ -1,0 +1,44 @@
+.logo-form {
+    display:grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: 
+    "logo logo "
+    "searchbar searchbar"
+    "search lucky";
+    
+}
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+li a {
+    display: block;
+    padding: 8px;
+}
+li {
+    float: left;
+}
+li a:link {
+    text-decoration: none;
+    color:black;
+  
+}
+li a:hover {
+    text-decoration: underline;
+}
+.logo {
+grid-area: logo;
+}
+.search-bar {
+grid-area: searchbar;
+}
+.search-btn {
+grid-area: search;
+grid-column-start: 1;
+grid-row-end: 2;
+}
+.lucky {
+grid-area: lucky;
+}

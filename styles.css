@@ -1,42 +1,105 @@
 
-ul {
-    list-style-type:none;
-    margin:0;
-    padding:0;
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
 }
-li a {
-    display: block;
-    padding: 8px;
+header {
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 1;
 }
-.leftNav {
-    float: left;
+nav {
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items:center;
 }
-.rightNav {
-    float: right;
+nav div {
+    display: flex;
+    width: 50%;
+    padding: 10px;
+    align-items: center;
 }
-li a:link {
+nav div:nth-child(1) {
+    justify-content: start;
+}
+nav div:nth-child(2){
+    justify-content: flex-end;
+    text-align: right;
+    right: 0;
+}
+nav div a {
+    padding: 5px;
+    white-space: nowrap;
     text-decoration: none;
-    color:black;
-  
+    color: #3b3b3b;
 }
-li a:hover {
+a:hover{
     text-decoration: underline;
 }
-.logo-form {
-   height: 10em;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-    }
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 220px;
+}
+main img{
+    display: block;
+    margin: 0 auto;
+}
+.search_icon{
+    position: absolute;
+    padding: 11px 11px;
+    filter: contrast(0);
+    background-position: -248px -35px;
+    margin: 30px 30px;
+}
+#search{
+    width: 50vw;
+    height: 40px;
+    border: 1px solid #e1e1e1;
+    border-radius: 50px;
+    font-size: initial;
+    margin: 20px;
+}
+#search:hover, #search:active, #search:focus{
+    box-shadow: 0px 1.7px 5px #dfdfdf;
+    outline: none;
+}
 .buttons {
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
 }
-.leftFooter {
-    float: left;
+.buttons div{
+    margin: 5px;
+    padding: 10px;
+    color: #3b3b3b;
+    background: #eee;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 5px;
 }
-.rightFooter {
-    float: right;
+.buttons div:hover{
+    border: 1px solid #c0c0c0;
 }
-    
-   
+.buttons a:hover{
+    text-decoration: none;
+}
+footer{
+    background-color: #eeeeee;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+ 

@@ -8,8 +8,11 @@ li a {
     display: block;
     padding: 8px;
 }
-li {
+.leftNav {
     float: left;
+}
+.rightNav {
+    float: right;
 }
 li a:link {
     text-decoration: none;
@@ -28,6 +31,12 @@ li a:hover {
     }
 .buttons {
     
+}
+.leftFooter {
+    float: left;
+}
+.rightFooter {
+    float: right;
 }
     
    
